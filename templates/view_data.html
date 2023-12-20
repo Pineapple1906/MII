@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+              rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+              crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+                crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container mt-4">
+          <div class="card">
+            <div class="card-body">
+                <h1 class="text-center">Набор данных, состоящий из 100 самых ценных Unicorn мира!: </h1>
+                <br>
+                <h5 class="text-center">Описание набора данных: {{description}}</h5>
+                <br>
+                <h3 class="text-center">Описание стоблцов таблицы:</h3>
+                <br>
+                <h6 class="text-center">{{column_info}}</h6>
+
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">Company - название компании</li>
+                    <li class="list-group-item">Valuation ($B) - оценка бюджета компании (в милрд долларов)</li>
+                    <li class="list-group-item">Country - страна компании</li>
+                    <li class="list-group-item">State - штат компании</li>
+                    <li class="list-group-item">City - город</li>
+                    <li class="list-group-item">Industries - отрасль производства</li>
+                    <li class="list-group-item">Founded Year - год основания</li>
+                    <li class="list-group-item">Name of Founders - основатели компании</li>
+                    <li class="list-group-item">Total Funding- общий объём финансирования</li>
+                    <li class="list-group-item">Number of Employees- количество работников</li>
+
+                  </ol>
+
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item"><b> Пустые ячейки:</b> {{empty_count}}</li>
+                    <li class="list-group-item"><b> Заполненные ячейки:</b> {{fill_count}}</li>
+                    <li class="list-group-item"><b> Количество строк:</b> {{line_count}}</li>
+                    <li class="list-group-item"><b> Количество столбцов:</b> {{column_count}}</li>
+                </ol>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-4">
+            <form action="/" method="GET">
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary btn-lg">Новый диапазон</button>
+                  </div>
+            </form>
+        </div>
+    </body>
+</html>
